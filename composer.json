@@ -11,15 +11,15 @@
     "graphp/graphviz": "v0.2.2"
   },
   "autoload": {
-    "psr-4": {
-      "BASE\\": "libs/"
-    },
     "autoload": {
-      "classmap": [
+      "files": [
         "vendor/smarty/smarty/libs/Smarty.class.php",
         "vendor/smarty/smarty/libs/SmartyBC.class.php",
         "vendor/smarty/smarty/libs/sysplugins/smarty_security.php"
       ]
+    },
+    "psr-4": {
+      "BASE\\": "libs/"
     }
   },
   "config": {
@@ -27,5 +27,5 @@
       "php": "7.2.0"
     }
   },
-  "homepage": "https://github.com/gluecks-gmbh/BASE"
+  "homepage": "https://github.com/gluecks-gmbh/base"
 }
