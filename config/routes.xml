@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../libs/routes.xsd">
+    <route controller="/Website::homepage">
+        <uri code="de-de" value="/"></uri>
+        <uri code="fr-de" value="/"></uri>
+    </route>
+    <route controller="/About::overview">
+        <uri code="de-de" value="about/"></uri>
+        <subroutes>
+            <route controller="/About::history">
+                <uri code="de-de" value="history"></uri>
+            </route>
+        </subroutes>
+    </route>
+    <route controller="/Stores::overview">
+        <uri code="*" value="/stores/"></uri>
+        <subroutes>
+            <route controller="/Stores::details">
+                <uri code="*" value="([a-z]{1,})" regExp="true"></uri>
+            </route>
+        </subroutes>
+    </route>
+</routes>

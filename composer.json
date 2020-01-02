@@ -1,0 +1,31 @@
+{
+  "name": "Gluecks-GmbH/BASE",
+  "version": "0.1",
+  "require": {
+    "smarty/smarty": "~3.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8",
+    "jms/serializer": "1.7.*",
+    "phpdocumentor/phpdocumentor": "2.9",
+    "graphp/graphviz": "v0.2.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "BASE\\": "libs/"
+    },
+    "autoload": {
+      "classmap": [
+        "vendor/smarty/smarty/libs/Smarty.class.php",
+        "vendor/smarty/smarty/libs/SmartyBC.class.php",
+        "vendor/smarty/smarty/libs/sysplugins/smarty_security.php"
+      ]
+    }
+  },
+  "config": {
+    "platform": {
+      "php": "7.2.0"
+    }
+  },
+  "homepage": "https://github.com/gluecks-gmbh/BASE"
+}

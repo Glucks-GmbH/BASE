@@ -1,0 +1,12 @@
+<routes>
+    <route controller="/Website::homepage">
+    </route>
+    <route controller="/About::overview">
+        <uri code="de-de" value="about/"></uri>
+        <subroutes>
+            <route controller="/About::history">
+                <uri code="de-de" value="history"></uri>
+            </route>
+        </subroutes>
+    </route>
+</routes>

@@ -1,0 +1,27 @@
+<routes>
+    <route controller="/Website::homepage">
+        <uri code="de-de" value="/"></uri>
+        <uri code="fr-de" value="/"></uri>
+    </route>
+    <route controller="/About::overview">
+        <uri code="de-de" value="about/"></uri>
+        <subroutes>
+            <route controller="/About::history">
+                <uri code="de-de" value="history"></uri>
+                <subroutes>
+                    <route controller="/About::historyTimeline">
+                        <uri code="de-de" value="timeline"></uri>
+                    </route>
+                </subroutes>
+            </route>
+        </subroutes>
+    </route>
+    <route controller="/Stores::overview">
+        <uri code="*" value="/stores/"></uri>
+        <subroutes>
+            <route controller="/Stores::details">
+                <uri code="*" value="([a-z]{1,})" regExp="true"></uri>
+            </route>
+        </subroutes>
+    </route>
+</routes>

@@ -1,0 +1,6 @@
+/vendor/
+/composer.phar
+/phpunit/.phpunit.result.cache
+/documentation/codeCoverage/
+/public/views/templates_c/
+/public/views/cache/

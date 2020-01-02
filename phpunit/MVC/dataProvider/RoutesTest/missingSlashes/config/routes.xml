@@ -1,0 +1,39 @@
+<routes>
+    <route controller="/Website::homepage">
+        <uri code="de-de" value="/"></uri>
+        <uri code="fr-de" value="/"></uri>
+    </route>
+    <route controller="/Stores::overview">
+        <uri code="de-de" value="stores/"></uri>
+        <subroutes>
+            <route controller="/Stores::london">
+                <uri code="de-de" value="london"></uri>
+            </route>
+            <route controller="/Stores::berlin">
+                <uri code="de-de" value="berlin/"></uri>
+            </route>
+            <route controller="/Stores::wien">
+                <uri code="de-de" value="/wien"></uri>
+            </route>
+        </subroutes>
+    </route>
+    <route controller="/About::overview">
+        <uri code="de-de" value="about"></uri>
+        <subroutes>
+            <route controller="/About::history">
+                <uri code="de-de" value="history/"></uri>
+                <subroutes>
+                    <route controller="/About::historyTimeline">
+                        <uri code="de-de" value="/timeline"></uri>
+                    </route>
+                </subroutes>
+            </route>
+            <route controller="/About::future">
+                <uri code="de-de" value="/future"></uri>
+            </route>
+            <route controller="/About::team">
+                <uri code="de-de" value="team"></uri>
+            </route>
+        </subroutes>
+    </route>
+</routes>

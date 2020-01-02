@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<BASE xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../libs/base.xsd">
+    <virtual_hosts>
+        <host>
+            <domain>localhost:51111</domain>
+            <localCode>de-de</localCode>
+            <allowedLocalCodes>
+                <localCode>en-de</localCode>
+                <localCode>fr-de</localCode>
+            </allowedLocalCodes>
+        </host>
+        <host>
+            <domain>local.de</domain>
+            <localCode>de-de</localCode>
+            <allowedLocalCodes>
+                <localCode>fr-de</localCode>
+            </allowedLocalCodes>
+        </host>
+    </virtual_hosts>
+    <templates engine="smarty"/>
+</BASE>

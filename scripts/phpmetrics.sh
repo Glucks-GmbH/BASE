@@ -1,0 +1,1 @@
+php ../vendor/phpmetrics/phpmetrics/bin/phpmetrics --report-html="../documentation/phpmetrics" ../libs/

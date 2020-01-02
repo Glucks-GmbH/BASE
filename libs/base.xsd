@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="BASE">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="virtual_hosts">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="host" maxOccurs="unbounded">
+                                <xsd:complexType>
+                                    <xsd:sequence>
+                                        <xsd:element name="domain" type="xsd:string">
+                                        </xsd:element>
+                                        <xsd:element name="localCode" type="xsd:string">
+                                        </xsd:element>
+                                        <xsd:element name="allowedLocalCodes" minOccurs="0">
+                                            <xsd:complexType>
+                                                <xsd:sequence>
+                                                    <xsd:element name="localCode" maxOccurs="unbounded"
+                                                                 type="xsd:string">
+                                                    </xsd:element>
+                                                </xsd:sequence>
+                                            </xsd:complexType>
+                                        </xsd:element>
+                                    </xsd:sequence>
+                                </xsd:complexType>
+                            </xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+                <xsd:element name="templates">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                        </xsd:sequence>
+                        <xsd:attribute name="engine" type="xsd:string" use="required"/>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>
