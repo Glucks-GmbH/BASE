@@ -11,13 +11,11 @@
     "graphp/graphviz": "v0.2.2"
   },
   "autoload": {
-    "autoload": {
-      "files": [
-        "vendor/smarty/smarty/libs/Smarty.class.php",
-        "vendor/smarty/smarty/libs/SmartyBC.class.php",
-        "vendor/smarty/smarty/libs/sysplugins/smarty_security.php"
-      ]
-    },
+    "classmap": [
+      "vendor/smarty/smarty/libs/Smarty.class.php",
+      "vendor/smarty/smarty/libs/SmartyBC.class.php",
+      "vendor/smarty/smarty/libs/sysplugins/smarty_security.php"
+    ],
     "psr-4": {
       "BASE\\": "libs/"
     }
