@@ -1,5 +1,5 @@
 {
-  "name": "gluecks-GmbH/base",
+  "name": "gluecks-gmbh/base",
   "version": "0.1",
   "require": {
     "smarty/smarty": "~3.1"
