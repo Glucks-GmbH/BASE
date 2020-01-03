@@ -56,7 +56,7 @@ class ParentController implements \BASE\MVC\TemplateEngines\ParentController
 
 		$this->Smarty->setTemplateDir(Config::getAppDir() . "public/views/templates/");
 		$this->Smarty->setCacheDir(Config::getAppDir() . "public/views/cache/");
-		$this->Smarty->setConfigDir(Config::getAppDir() . "public/views/config/");
+		$this->Smarty->setConfigDir(Config::getAppDir() . "public/views/configs/");
 		$this->Smarty->setCompileDir(Config::getAppDir() . "public/views/templates_c/");
 
 		$this->loadPlugins();
