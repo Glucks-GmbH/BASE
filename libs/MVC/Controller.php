@@ -2,9 +2,10 @@
 /**
  * Header
  *
- * @package BASE
- * @subpackage MVC
- * @author Frederik Glücks <frederik@gluecks-gmbh.de>
+ * @package        BASE
+ * @subpackage     MVC
+ * @author         Frederik Glücks <frederik@gluecks-gmbh.de>
+ * @license        lgpl-3.0
  *
  */
 
@@ -15,9 +16,11 @@ use BASE\Config;
 /**
  * Class Controller
  *
- * @package BASE
- * @subpackage MVC
- * @version v0.1
+ * @package        BASE
+ * @subpackage     MVC
+ * @version        v0.1
+ * @author         Frederik Glücks <frederik@gluecks-gmbh.de>
+ * @license        lgpl-3.0
  *
  */
 class Controller
@@ -33,7 +36,7 @@ class Controller
 	 *
 	 * @return bool
 	 */
-	public function load(string $controller, array $regExpMatches, string $localCode) : bool
+	public function load(string $controller, array $regExpMatches, string $localCode): bool
 	{
 		$appDir = Config::getAppDir();
 

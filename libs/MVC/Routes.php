@@ -2,9 +2,10 @@
 /**
  * Class to parse the routes and returns the controller to an used uri.
  *
- * @package    BASE
- * @subpackage MVC
- * @author     Frederik Glücks <frederik@gluecks-gmbh.de>
+ * @package        BASE
+ * @subpackage     MVC
+ * @author         Frederik Glücks <frederik@gluecks-gmbh.de>
+ * @license        lgpl-3.0
  *
  */
 
@@ -17,7 +18,9 @@ use RuntimeException;
 /**
  * Class to parse the routes and returns the controller to an used uri.
  *
- * @package BASE\MVC
+ * @package        BASE\MVC
+ * @author         Frederik Glücks <frederik@gluecks-gmbh.de>
+ * @license        lgpl-3.0
  */
 class Routes
 {

@@ -2,9 +2,10 @@
 /**
  * Smarty Plugin Link to create uris directly inside the template
  *
- * @package    BASE
- * @subpackage MVC
- * @author     Frederik Glücks <frederik@gluecks-gmbh.de>
+ * @package        BASE
+ * @subpackage     MVC
+ * @author         Frederik Glücks <frederik@gluecks-gmbh.de>
+ * @license        lgpl-3.0
  *
  */
 
@@ -16,7 +17,9 @@ use RuntimeException;
 /**
  * Class Link
  *
- * @package BASE\MVC\TemplateEngines\Smarty\Plugins
+ * @package        BASE\MVC\TemplateEngines\Smarty\Plugins
+ * @author         Frederik Glücks <frederik@gluecks-gmbh.de>
+ * @license        lgpl-3.0
  */
 class Link
 {
@@ -49,7 +52,8 @@ class Link
 	 *
 	 * @return array
 	 */
-	public function getBreadcrumb(array $parameters) {
+	public function getBreadcrumb(array $parameters)
+	{
 
 	}
 }

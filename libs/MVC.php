@@ -2,9 +2,10 @@
 /**
  * Main file for MVC
  *
- * @package BASE
+ * @package    BASE
  * @subpackage MVC
- * @author Frederik Glücks <frederik@gluecks-gmbh.de>
+ * @author         Frederik Glücks <frederik@gluecks-gmbh.de>
+ * @license        lgpl-3.0
  *
  */
 
@@ -19,8 +20,9 @@ use BASE\MVC\Uri;
 /**
  * Class MVC
  *
- * @package BASE
- * @author       Frederik Glücks <frederik@gluecks-gmbh.de>
+ * @package        BASE
+ * @author         Frederik Glücks <frederik@gluecks-gmbh.de>
+ * @license        lgpl-3.0
  */
 class MVC
 {

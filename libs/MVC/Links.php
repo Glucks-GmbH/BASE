@@ -2,9 +2,10 @@
 /**
  * Class to get the local information from uri or config.
  *
- * @package    BASE
- * @subpackage MVC
- * @author     Frederik Glücks <frederik@gluecks-gmbh.de>
+ * @package        BASE
+ * @subpackage     MVC
+ * @author         Frederik Glücks <frederik@gluecks-gmbh.de>
+ * @license        lgpl-3.0
  *
  */
 
@@ -15,7 +16,9 @@ use BASE\Helper\RegExp;
 /**
  * Class to uris from controller. Used as Link-Builder
  *
- * @package BASE\MVC
+ * @package        BASE\MVC
+ * @author         Frederik Glücks <frederik@gluecks-gmbh.de>
+ * @license        lgpl-3.0
  */
 class Links
 {

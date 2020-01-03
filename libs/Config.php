@@ -2,8 +2,9 @@
 /**
  * Config
  *
- * @package BASE
- * @author  Frederik Glücks <frederik@gluecks-gmbh.de>
+ * @package        BASE
+ * @author         Frederik Glücks <frederik@gluecks-gmbh.de>
+ * @license        lgpl-3.0
  *
  */
 
@@ -15,9 +16,10 @@ use \RuntimeException;
 /**
  * Class Config
  *
- * @package BASE
- * @author  Frederik Glücks <frederik@gluecks-gmbh.de>
- * @version v0.1
+ * @package        BASE
+ * @author         Frederik Glücks <frederik@gluecks-gmbh.de>
+ * @license        lgpl-3.0
+ * @version        v0.1
  */
 class Config
 {
@@ -81,7 +83,7 @@ class Config
 			}
 
 			if (is_null(self::$currentHost)) {
-				throw new RuntimeException("Host is not set base.xml: Missing host: ".$_SERVER['HTTP_HOST'], E_ERROR);
+				throw new RuntimeException("Host is not set base.xml: Missing host: " . $_SERVER['HTTP_HOST'], E_ERROR);
 			}
 		}
 	}

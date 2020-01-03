@@ -2,9 +2,10 @@
 /**
  * Helper class with regular expression
  *
- * @package    BASE
- * @subpackage Helper
- * @author     Frederik Glücks <frederik@gluecks-gmbh.de>
+ * @package        BASE
+ * @subpackage     Helper
+ * @author         Frederik Glücks <frederik@gluecks-gmbh.de>
+ * @license        lgpl-3.0
  *
  */
 
@@ -13,10 +14,11 @@ namespace BASE\Helper;
 /**
  * Helper class with regular expression
  *
- * @author     Frederik Glücks <frederik@gluecks-gmbh.de>
- * @package    BASE
- * @subpackage Helper
- * @version    v0.1
+ * @author         Frederik Glücks <frederik@gluecks-gmbh.de>
+ * @license        lgpl-3.0
+ * @package        BASE
+ * @subpackage     Helper
+ * @version        v0.1
  */
 abstract class RegExp
 {

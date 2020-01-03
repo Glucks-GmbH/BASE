@@ -2,11 +2,13 @@
 /**
  * Class to get and parse the REQUEST_URI
  *
- * @package    BASE
- * @subpackage MVC
- * @author     Frederik Glücks <frederik@gluecks-gmbh.de>
+ * @package        BASE
+ * @subpackage     MVC
+ * @author         Frederik Glücks <frederik@gluecks-gmbh.de>
+ * @license        lgpl-3.0
  *
  */
+
 namespace BASE\MVC;
 
 use BASE\Helper\RegExp;
@@ -14,7 +16,9 @@ use BASE\Helper\RegExp;
 /**
  * Class Uri
  *
- * @package BASE\MVC
+ * @package        BASE\MVC
+ * @author         Frederik Glücks <frederik@gluecks-gmbh.de>
+ * @license        lgpl-3.0
  */
 class Uri
 {

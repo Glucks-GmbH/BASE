@@ -4,7 +4,8 @@
  *
  * @package    BASE
  * @subpackage MVC/Smarty
- * @author     Frederik Glücks <frederik@gluecks-gmbh.de>
+ * @author         Frederik Glücks <frederik@gluecks-gmbh.de>
+ * @license        lgpl-3.0
  *
  */
 
@@ -22,7 +23,9 @@ use SmartyException;
  *
  * @package    BASE
  * @subpackage MVC
- * @version    v0.1
+ * @version    v0.
+ * @author         Frederik Glücks <frederik@gluecks-gmbh.de>
+ * @license        lgpl-3.0
  *
  */
 class ParentController implements \BASE\MVC\TemplateEngines\ParentController
