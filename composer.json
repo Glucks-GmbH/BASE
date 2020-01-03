@@ -11,7 +11,7 @@
     "phpdocumentor/phpdocumentor": "2.9"
   },
   "autoload": {
-    "classmap": [
+    "files": [
       "vendor/smarty/smarty/libs/Smarty.class.php",
       "vendor/smarty/smarty/libs/SmartyBC.class.php",
       "vendor/smarty/smarty/libs/sysplugins/smarty_security.php"
