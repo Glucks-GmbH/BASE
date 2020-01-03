@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<BASE xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/gluecks-gmbh/base/master/libs/base.xsd">
+    <virtual_hosts>
+        <host>
+            <domain>localhost:52222</domain>
+            <localCode>de-de</localCode>
+        </host>
+    </virtual_hosts>
+    <templates engine="smarty"/>
+</BASE>

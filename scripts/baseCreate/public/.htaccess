@@ -1,0 +1,23 @@
+
+  RewriteEngine on
+  RewriteBase /
+
+  RewriteCond %{REQUEST_FILENAME} !img\/(.*)$ [NC]
+  RewriteCond %{REQUEST_FILENAME} !js\/(.*)$ [NC]
+  RewriteCond %{REQUEST_FILENAME} !css\/(.*)$ [NC]
+  RewriteCond %{REQUEST_FILENAME} !(.*)\.css(.*)$ [NC]
+  RewriteCond %{REQUEST_FILENAME} !(.*).js(.*)$ [NC]
+  RewriteCond %{REQUEST_FILENAME} !(.*).jpg$ [NC]
+  RewriteCond %{REQUEST_FILENAME} !(.*).ico$ [NC]
+  RewriteCond %{REQUEST_FILENAME} !(.*).png$ [NC]
+  RewriteCond %{REQUEST_FILENAME} !(.*).gif$ [NC]
+  RewriteCond %{REQUEST_FILENAME} !(.*).pdf$ [NC]
+  RewriteCond %{REQUEST_FILENAME} !(.*).epub$ [NC]
+  RewriteCond %{REQUEST_FILENAME} !(.*).mobi$ [NC]
+  RewriteCond %{REQUEST_FILENAME} !(.*).ttf$ [NC]
+  RewriteCond %{REQUEST_FILENAME} !(.*).eot$ [NC]
+  RewriteCond %{REQUEST_FILENAME} !(.*).svg$ [NC]
+  RewriteCond %{REQUEST_FILENAME} !(.*).woff$ [NC]
+  RewriteCond %{REQUEST_FILENAME} !fscoclient.php$ [NC]
+  RewriteRule ^(.*)$ index.php
+  
