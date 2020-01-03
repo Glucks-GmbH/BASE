@@ -1,4 +1,4 @@
 <?php
 require_once "../vendor/autoload.php";
 
-BASE\MVC::run();
+echo BASE\MVC::run();
