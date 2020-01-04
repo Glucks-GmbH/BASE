@@ -2,8 +2,8 @@
 /**
  * Main file for MVC
  *
- * @package    BASE
- * @subpackage MVC
+ * @package        BASE
+ * @subpackage     MVC
  * @author         Frederik Glücks <frederik@gluecks-gmbh.de>
  * @license        lgpl-3.0
  *
@@ -29,9 +29,9 @@ class MVC
 	/**
 	 * Starts the MVC
 	 *
-	 * @return void
+	 * @return string
 	 */
-	public static function run(): void
+	public static function run()
 	{
 		Config::loadXml();
 
@@ -40,7 +40,7 @@ class MVC
 
 		if ($code === null) {
 			header("HTTP/1.0 404 Not Found");
-			die ('404 Not found - invalid language-country code');
+			return '404 Not found - invalid language-country code';
 		} else {
 			$Routes = new Routes($code);
 			Links::setRoutes($Routes->getRoutes());
@@ -49,10 +49,12 @@ class MVC
 
 			if ($controller === null) {
 				header("HTTP/1.0 404 Not Found");
-				die ('404 Not found');
+				return "404 Not found";
 			} else {
 				$Controller = new Controller();
 				$Controller->load($controller['controller'], $controller['regExpMatches'], $code);
+
+				return "";
 			}
 		}
 	}
