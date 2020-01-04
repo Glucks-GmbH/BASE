@@ -11,9 +11,6 @@
     "phpdocumentor/phpdocumentor": "2.9"
   },
   "autoload": {
-    "classmap": [
-      "vendor/smarty/smarty/libs/"
-    ],
     "psr-4": {
       "BASE\\": "libs/"
     }
