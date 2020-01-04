@@ -72,18 +72,20 @@ class Config
 		if (!file_exists($configFile)) {
 			throw new RuntimeException("Missing base.xml", E_ERROR);
 		} else {
+			$httpHost = filter_input(INPUT_SERVER, "HTTP_HOST", FILTER_SANITIZE_STRING);
+
 			self::$config = simplexml_load_file($configFile);
 			self::$currentHost = null;
 
 			foreach (self::$config->virtual_hosts->host as $host) {
-				if ($host->domain == $_SERVER['HTTP_HOST']) {
+				if ($host->domain == $httpHost) {
 					self::$currentHost = $host;
 					break;
 				}
 			}
 
 			if (is_null(self::$currentHost)) {
-				throw new RuntimeException("Host is not set base.xml: Missing host: " . $_SERVER['HTTP_HOST'], E_ERROR);
+				throw new RuntimeException("Host is not set base.xml: Missing host: " . $httpHost, E_ERROR);
 			}
 		}
 	}
