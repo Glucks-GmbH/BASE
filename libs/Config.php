@@ -12,6 +12,7 @@ namespace BASE;
 
 use \InvalidArgumentException;
 use \RuntimeException;
+use stdClass;
 
 /**
  * Class Config
@@ -29,14 +30,14 @@ class Config
 	 *
 	 * @var string
 	 */
-	private static $appDir = "";
+	private static string $appDir = "";
 
 	/**
 	 * XML-Object with the host part of the current HTTP_HOST from the config.xml
 	 *
 	 * @var object
 	 */
-	private static $currentHost;
+	private static object $currentHost;
 
 	/**
 	 *
@@ -44,7 +45,7 @@ class Config
 	 *
 	 * @var object
 	 */
-	private static $config;
+	private static object $config;
 
 
 	/**
@@ -54,9 +55,9 @@ class Config
 	 */
 	public static function clear()
 	{
-		self::$config = null;
+		self::$config = new stdClass();
 		self::$appDir = "";
-		self::$currentHost = "";
+		self::$currentHost = new stdClass();
 	}
 
 
@@ -75,7 +76,7 @@ class Config
 			$httpHost = filter_input(INPUT_SERVER, "HTTP_HOST", FILTER_SANITIZE_STRING);
 
 			self::$config = simplexml_load_file($configFile);
-			self::$currentHost = null;
+			self::$currentHost = new stdClass();
 
 			foreach (self::$config->virtual_hosts->host as $host) {
 				if ($host->domain == $httpHost) {
@@ -148,12 +149,10 @@ class Config
 		if (!isset(self::$config->templates)) {
 			return null;
 		} else {
-			$templateEngine = [
+			return [
 				'engine' => (string)self::$config->templates->attributes()->engine,
 				'config' => self::$config->templates
 			];
-
-			return $templateEngine;
 		}
 	}
 }
