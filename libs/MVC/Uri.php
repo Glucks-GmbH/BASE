@@ -29,7 +29,7 @@ class Uri
 	 */
 	private static function getUri(): string
 	{
-		return $_SERVER['REQUEST_URI'];
+		return filter_input(INPUT_SERVER, "REQUEST_URI", FILTER_SANITIZE_URL);
 	}
 
 	/**
