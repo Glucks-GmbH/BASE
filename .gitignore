@@ -5,3 +5,4 @@
 /public/views/templates_c/
 /public/views/cache/
 /.idea/
+/.phpunit.result.cache
