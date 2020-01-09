@@ -1,3 +1,5 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/a14f71f0f0594c8a9713e707db77648b)](https://www.codacy.com/gh/gluecks-gmbh/base?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=gluecks-gmbh/base&amp;utm_campaign=Badge_Grade)
+
 # BASE
 Base is Framework and MVC
 
