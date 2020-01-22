@@ -3,6 +3,13 @@
 # BASE
 Base is Framework and MVC
 
+# Installation
+
+## composer
+
+## Create basic MVC installion
+
+ Run the script "./vendor/gluecks-gmbh/base/scripts/baseCreate.sh" inside the project root folder.    
 
 ## MVC / Smarty 
 
