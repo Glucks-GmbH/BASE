@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>Framework BASE</title>
+    <title>API Documentation</title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
 
@@ -24,7 +24,7 @@
     <script type="text/javascript">
     function loadExternalCodeSnippets() {
         Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach(function (pre) {
-            var src = pre.getAttribute('data-src');
+            var src = pre.getAttribute('data-src').replace( /\\/g, '/');
             var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
             var language = 'php';
 
@@ -83,7 +83,7 @@
             <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                 <i class="icon-ellipsis-vertical"></i>
             </a>
-            <a class="brand" href="../index.html">Framework BASE</a>
+            <a class="brand" href="../index.html">API Documentation</a>
 
             <div class="nav-collapse">
                 <ul class="nav pull-right">
@@ -144,28 +144,28 @@
                                 <div class="accordion" style="margin-bottom: 0">
         <div class="accordion-group">
             <div class="accordion-heading">
-                                    <a class="accordion-toggle " data-toggle="collapse" data-target="#namespace-2013521851"></a>
+                                    <a class="accordion-toggle " data-toggle="collapse" data-target="#namespace-950550331"></a>
                                 <a href="../namespaces/default.html" style="margin-left: 30px; padding-left: 0">\</a>
             </div>
-            <div id="namespace-2013521851" class="accordion-body collapse in">
+            <div id="namespace-950550331" class="accordion-body collapse in">
                 <div class="accordion-inner">
 
                                                     <div class="accordion" style="margin-bottom: 0">
         <div class="accordion-group">
             <div class="accordion-heading">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1228832967"></a>
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1373683427"></a>
                                 <a href="../namespaces/BASE.html" style="margin-left: 30px; padding-left: 0">BASE</a>
             </div>
-            <div id="namespace-1228832967" class="accordion-body collapse ">
+            <div id="namespace-1373683427" class="accordion-body collapse ">
                 <div class="accordion-inner">
 
                                                     <div class="accordion" style="margin-bottom: 0">
         <div class="accordion-group">
             <div class="accordion-heading">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1995089822"></a>
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1750929907"></a>
                                 <a href="../namespaces/BASE.Helper.html" style="margin-left: 30px; padding-left: 0">Helper</a>
             </div>
-            <div id="namespace-1995089822" class="accordion-body collapse ">
+            <div id="namespace-1750929907" class="accordion-body collapse ">
                 <div class="accordion-inner">
 
                     
@@ -180,37 +180,37 @@
                                                     <div class="accordion" style="margin-bottom: 0">
         <div class="accordion-group">
             <div class="accordion-heading">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-89738786"></a>
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1403506297"></a>
                                 <a href="../namespaces/BASE.MVC.html" style="margin-left: 30px; padding-left: 0">MVC</a>
             </div>
-            <div id="namespace-89738786" class="accordion-body collapse ">
+            <div id="namespace-1403506297" class="accordion-body collapse ">
                 <div class="accordion-inner">
 
                                                     <div class="accordion" style="margin-bottom: 0">
         <div class="accordion-group">
             <div class="accordion-heading">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-818860978"></a>
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1287404029"></a>
                                 <a href="../namespaces/BASE.MVC.TemplateEngines.html" style="margin-left: 30px; padding-left: 0">TemplateEngines</a>
             </div>
-            <div id="namespace-818860978" class="accordion-body collapse ">
+            <div id="namespace-1287404029" class="accordion-body collapse ">
                 <div class="accordion-inner">
 
                                                     <div class="accordion" style="margin-bottom: 0">
         <div class="accordion-group">
             <div class="accordion-heading">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-490317886"></a>
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1429792422"></a>
                                 <a href="../namespaces/BASE.MVC.TemplateEngines.Smarty.html" style="margin-left: 30px; padding-left: 0">Smarty</a>
             </div>
-            <div id="namespace-490317886" class="accordion-body collapse ">
+            <div id="namespace-1429792422" class="accordion-body collapse ">
                 <div class="accordion-inner">
 
                                                     <div class="accordion" style="margin-bottom: 0">
         <div class="accordion-group">
             <div class="accordion-heading">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1575741086"></a>
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-559136590"></a>
                                 <a href="../namespaces/BASE.MVC.TemplateEngines.Smarty.Plugins.html" style="margin-left: 30px; padding-left: 0">Plugins</a>
             </div>
-            <div id="namespace-1575741086" class="accordion-body collapse ">
+            <div id="namespace-559136590" class="accordion-body collapse ">
                 <div class="accordion-inner">
 
                     
@@ -354,7 +354,7 @@
                         
                         
                         
-                        
+                                                
                                                                         </dl>
                     <h2>Tags</h2>
                     <table class="table table-condensed">
@@ -363,7 +363,7 @@
                                 version
                             </th>
                             <td>
-                                                                    <p>v0.</p>
+                                                                                                        <p>v0.</p>
                                                             </td>
                         </tr>
                                             <tr>
@@ -371,7 +371,7 @@
                                 author
                             </th>
                             <td>
-                                                                    <p>Frederik Glücks <a href="mailto:frederik@gluecks-gmbh.de">frederik@gluecks-gmbh.de</a></p>
+                                                                                                        <p>Frederik Glücks <a href="mailto:frederik@gluecks-gmbh.de">frederik@gluecks-gmbh.de</a></p>
                                                             </td>
                         </tr>
                                             <tr>
@@ -379,7 +379,7 @@
                                 license
                             </th>
                             <td>
-                                                                    <p>lgpl-3.0</p>
+                                                                                                        <p>lgpl-3.0</p>
                                                             </td>
                         </tr>
                                         </table>
@@ -475,13 +475,15 @@
                             <dd></dd>
                                                                     </dl>
                 
-                				
+                
                             </article>
         </div>
         <aside class="span4 detailsbar">
             <h1><i class="icon-arrow-down"></i></h1>
                                                             <dl>
-                                                                            </dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/BASE.MVC.TemplateEngines.Smarty.ParentController.html"><div class="path-wrapper">\BASE\MVC\TemplateEngines\Smarty\ParentController</div></a></dd>
+                                                            </dl>
             <h2>Tags</h2>
             <table class="table table-condensed">
                                     <tr><td colspan="2"><em>None found</em></td></tr>
@@ -514,13 +516,15 @@
                             <dd></dd>
                                                                     </dl>
                 
-                				
+                
                             </article>
         </div>
         <aside class="span4 detailsbar">
             <h1><i class="icon-arrow-down"></i></h1>
                                                             <dl>
-                                                                            </dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/BASE.MVC.TemplateEngines.Smarty.ParentController.html"><div class="path-wrapper">\BASE\MVC\TemplateEngines\Smarty\ParentController</div></a></dd>
+                                                            </dl>
             <h2>Tags</h2>
             <table class="table table-condensed">
                                     <tr><td colspan="2"><em>None found</em></td></tr>
@@ -550,13 +554,15 @@ overwrites the text-vars from the default config file.</p>
                                             </table>
                 
                 
-                				
+                
                             </article>
         </div>
         <aside class="span4 detailsbar">
             <h1><i class="icon-arrow-down"></i></h1>
                                                             <dl>
-                                                                            </dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/BASE.MVC.TemplateEngines.Smarty.ParentController.html"><div class="path-wrapper">\BASE\MVC\TemplateEngines\Smarty\ParentController</div></a></dd>
+                                                            </dl>
             <h2>Tags</h2>
             <table class="table table-condensed">
                                     <tr><td colspan="2"><em>None found</em></td></tr>
@@ -581,13 +587,15 @@ overwrites the text-vars from the default config file.</p>
                             <dd></dd>
                                                                     </dl>
                 
-                				
+                
                             </article>
         </div>
         <aside class="span4 detailsbar">
             <h1><i class="icon-arrow-down"></i></h1>
                                                             <dl>
-                                                                            </dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/BASE.MVC.TemplateEngines.Smarty.ParentController.html"><div class="path-wrapper">\BASE\MVC\TemplateEngines\Smarty\ParentController</div></a></dd>
+                                                            </dl>
             <h2>Tags</h2>
             <table class="table table-condensed">
                                     <tr><td colspan="2"><em>None found</em></td></tr>
@@ -645,7 +653,7 @@ overwrites the text-vars from the default config file.</p>
                 <section class="span10 offset1">
                     <hr />
                     Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and authored
-                    on January 4th, 2020 at 16:28.
+                    on March 10th, 2020 at 23:50.
                 </section>
             </section>
         </section>

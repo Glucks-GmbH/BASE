@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>Framework BASE</title>
+    <title>API Documentation</title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
 
@@ -24,7 +24,7 @@
     <script type="text/javascript">
     function loadExternalCodeSnippets() {
         Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach(function (pre) {
-            var src = pre.getAttribute('data-src');
+            var src = pre.getAttribute('data-src').replace( /\\/g, '/');
             var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
             var language = 'php';
 
@@ -83,7 +83,7 @@
             <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                 <i class="icon-ellipsis-vertical"></i>
             </a>
-            <a class="brand" href="../index.html">Framework BASE</a>
+            <a class="brand" href="../index.html">API Documentation</a>
 
             <div class="nav-collapse">
                 <ul class="nav pull-right">
@@ -144,28 +144,28 @@
                                 <div class="accordion" style="margin-bottom: 0">
         <div class="accordion-group">
             <div class="accordion-heading">
-                                    <a class="accordion-toggle " data-toggle="collapse" data-target="#namespace-128266541"></a>
+                                    <a class="accordion-toggle " data-toggle="collapse" data-target="#namespace-1042480726"></a>
                                 <a href="../namespaces/default.html" style="margin-left: 30px; padding-left: 0">\</a>
             </div>
-            <div id="namespace-128266541" class="accordion-body collapse in">
+            <div id="namespace-1042480726" class="accordion-body collapse in">
                 <div class="accordion-inner">
 
                                                     <div class="accordion" style="margin-bottom: 0">
         <div class="accordion-group">
             <div class="accordion-heading">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1157052244"></a>
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1645315138"></a>
                                 <a href="../namespaces/BASE.html" style="margin-left: 30px; padding-left: 0">BASE</a>
             </div>
-            <div id="namespace-1157052244" class="accordion-body collapse ">
+            <div id="namespace-1645315138" class="accordion-body collapse ">
                 <div class="accordion-inner">
 
                                                     <div class="accordion" style="margin-bottom: 0">
         <div class="accordion-group">
             <div class="accordion-heading">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-20555509"></a>
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1849474836"></a>
                                 <a href="../namespaces/BASE.Helper.html" style="margin-left: 30px; padding-left: 0">Helper</a>
             </div>
-            <div id="namespace-20555509" class="accordion-body collapse ">
+            <div id="namespace-1849474836" class="accordion-body collapse ">
                 <div class="accordion-inner">
 
                     
@@ -180,37 +180,37 @@
                                                     <div class="accordion" style="margin-bottom: 0">
         <div class="accordion-group">
             <div class="accordion-heading">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-994395001"></a>
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-678552824"></a>
                                 <a href="../namespaces/BASE.MVC.html" style="margin-left: 30px; padding-left: 0">MVC</a>
             </div>
-            <div id="namespace-994395001" class="accordion-body collapse ">
+            <div id="namespace-678552824" class="accordion-body collapse ">
                 <div class="accordion-inner">
 
                                                     <div class="accordion" style="margin-bottom: 0">
         <div class="accordion-group">
             <div class="accordion-heading">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1129808153"></a>
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-255385732"></a>
                                 <a href="../namespaces/BASE.MVC.TemplateEngines.html" style="margin-left: 30px; padding-left: 0">TemplateEngines</a>
             </div>
-            <div id="namespace-1129808153" class="accordion-body collapse ">
+            <div id="namespace-255385732" class="accordion-body collapse ">
                 <div class="accordion-inner">
 
                                                     <div class="accordion" style="margin-bottom: 0">
         <div class="accordion-group">
             <div class="accordion-heading">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-968970254"></a>
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-2016939062"></a>
                                 <a href="../namespaces/BASE.MVC.TemplateEngines.Smarty.html" style="margin-left: 30px; padding-left: 0">Smarty</a>
             </div>
-            <div id="namespace-968970254" class="accordion-body collapse ">
+            <div id="namespace-2016939062" class="accordion-body collapse ">
                 <div class="accordion-inner">
 
                                                     <div class="accordion" style="margin-bottom: 0">
         <div class="accordion-group">
             <div class="accordion-heading">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1314176364"></a>
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-561908973"></a>
                                 <a href="../namespaces/BASE.MVC.TemplateEngines.Smarty.Plugins.html" style="margin-left: 30px; padding-left: 0">Plugins</a>
             </div>
-            <div id="namespace-1314176364" class="accordion-body collapse ">
+            <div id="namespace-561908973" class="accordion-body collapse ">
                 <div class="accordion-inner">
 
                     
@@ -351,7 +351,7 @@
                         
                         
                         
-                        
+                                                
                                                                         </dl>
                     <h2>Tags</h2>
                     <table class="table table-condensed">
@@ -360,7 +360,7 @@
                                 author
                             </th>
                             <td>
-                                                                    <p>Frederik Glücks <a href="mailto:frederik@gluecks-gmbh.de">frederik@gluecks-gmbh.de</a></p>
+                                                                                                        <p>Frederik Glücks <a href="mailto:frederik@gluecks-gmbh.de">frederik@gluecks-gmbh.de</a></p>
                                                             </td>
                         </tr>
                                             <tr>
@@ -368,7 +368,7 @@
                                 license
                             </th>
                             <td>
-                                                                    <p>lgpl-3.0</p>
+                                                                                                        <p>lgpl-3.0</p>
                                                             </td>
                         </tr>
                                         </table>
@@ -437,14 +437,16 @@
                 
                                     <h4>Returns</h4>
                     boolean
-                                    				
+                                    
                             </article>
         </div>
         <aside class="span4 detailsbar">
             <h1><i class="icon-arrow-down"></i></h1>
                             <span class="label label-info">static</span>
                                                             <dl>
-                                                                            </dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/BASE.MVC.Links.html"><div class="path-wrapper">\BASE\MVC\Links</div></a></dd>
+                                                            </dl>
             <h2>Tags</h2>
             <table class="table table-condensed">
                                     <tr><td colspan="2"><em>None found</em></td></tr>
@@ -479,14 +481,16 @@
                 
                                     <h4>Returns</h4>
                     string|null
-                                    				
+                                    
                             </article>
         </div>
         <aside class="span4 detailsbar">
             <h1><i class="icon-arrow-down"></i></h1>
                             <span class="label label-info">static</span>
                                                             <dl>
-                                                                            </dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/BASE.MVC.Links.html"><div class="path-wrapper">\BASE\MVC\Links</div></a></dd>
+                                                            </dl>
             <h2>Tags</h2>
             <table class="table table-condensed">
                                     <tr><td colspan="2"><em>None found</em></td></tr>
@@ -544,7 +548,7 @@
                 <section class="span10 offset1">
                     <hr />
                     Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and authored
-                    on January 4th, 2020 at 16:28.
+                    on March 10th, 2020 at 23:50.
                 </section>
             </section>
         </section>
