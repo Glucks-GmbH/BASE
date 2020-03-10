@@ -2,6 +2,7 @@
 /composer.phar
 /phpunit/.phpunit.result.cache
 /documentation/codeCoverage/
+/documentation/phpstan/
 /public/views/templates_c/
 /public/views/cache/
 /.idea/
