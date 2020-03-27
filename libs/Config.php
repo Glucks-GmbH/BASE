@@ -30,14 +30,14 @@ class Config
 	 *
 	 * @var string
 	 */
-	private static string $appDir = "";
+	private static $appDir = "";
 
 	/**
 	 * XML-Object with the host part of the current HTTP_HOST from the config.xml
 	 *
 	 * @var object
 	 */
-	private static object $currentHost;
+	private static $currentHost;
 
 	/**
 	 *
@@ -45,7 +45,7 @@ class Config
 	 *
 	 * @var object
 	 */
-	private static object $config;
+	private static $config;
 
 
 	/**
@@ -95,6 +95,7 @@ class Config
 	 * Returns the full config object of the current host. Can be limited by using a element name of the first level as function parameter.
 	 *
 	 * @param string $parameter
+     * @return string
 	 *
 	 */
 	public static function getHostParameter(string $parameter = "")
