@@ -32,7 +32,7 @@ class Link
 	 */
 	public function get(array $parameters)
 	{
-		if (!is_array($parameters['values'])) {
+		if (!isset($parameters['values']) || !is_array($parameters['values'])) {
 			$parameters['values'] = [];
 		}
 
@@ -54,6 +54,6 @@ class Link
 	 */
 	public function getBreadcrumb(array $parameters)
 	{
-
+	    return [];
 	}
 }
