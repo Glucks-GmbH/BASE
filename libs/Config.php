@@ -73,7 +73,7 @@ class Config
 		if (!file_exists($configFile)) {
 			throw new RuntimeException("Missing base.xml", E_ERROR);
 		} else {
-			$httpHost = filter_input(INPUT_SERVER, "HTTP_HOST", FILTER_SANITIZE_STRING);
+            $httpHost = filter_var($_SERVER['HTTP_HOST'], FILTER_SANITIZE_STRING);
 
 			self::$config = simplexml_load_file($configFile);
 			self::$currentHost = new stdClass();
