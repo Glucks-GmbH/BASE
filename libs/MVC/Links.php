@@ -12,6 +12,8 @@
 namespace BASE\MVC;
 
 use BASE\Helper\RegExp;
+use InvalidArgumentException;
+use RuntimeException;
 
 /**
  * Class to uris from controller. Used as Link-Builder
@@ -28,19 +30,18 @@ class Links
 	 *
 	 * @var array
 	 */
-	private static $links = [];
+	private static array $links = [];
 
 	/**
 	 * Stores the routes and builds an array for the getUri function
 	 *
 	 * @param array $routes
-	 *
 	 * @return bool
 	 */
 	public static function setRoutes(array $routes)
 	{
-		if (!is_array($routes) or count($routes) < 1) {
-			throw new \InvalidArgumentException("Invalid or empty routes array", E_ERROR);
+		if (count($routes) < 1) {
+			throw new InvalidArgumentException("Invalid or empty routes array", E_ERROR);
 		} else {
 			self::$links = [];
 
@@ -58,13 +59,12 @@ class Links
 	 *
 	 * @param string $requestedController
 	 * @param array  $regExpValues
-	 *
 	 * @return string|null
 	 */
 	public static function getUri(string $requestedController, array $regExpValues = [])
 	{
 		if (count(self::$links) < 1) {
-			throw new \RuntimeException("Empty routes list", E_ERROR);
+			throw new RuntimeException("Empty routes list", E_ERROR);
 		} else {
 			foreach (self::$links as $controller => $controllerData) {
 				if ($controller == $requestedController) {
@@ -78,17 +78,17 @@ class Links
 								$value = array_shift($regExpValues);
 
 								if (empty($value)) {
-									throw new \RuntimeException("Empty value for regular expression uri. Controller: " . $controller, E_ERROR);
+									throw new RuntimeException("Empty value for regular expression uri. Controller: " . $controller, E_ERROR);
 								}
 								if (!preg_match("/^" . $part . "$/", $value)) {
-									throw new \RuntimeException("Value does not match to regular expression. Controller: " . $controller . " RegExp: " . $part . " Value: " . $value, E_ERROR);
+									throw new RuntimeException("Value does not match to regular expression. Controller: " . $controller . " RegExp: " . $part . " Value: " . $value, E_ERROR);
 								} else {
 									$uriRegExpParts[$key] = $value;
 								}
 							}
 						}
 
-						$uri = join($uriRegExpParts);
+						$uri = join("", $uriRegExpParts);
 					}
 
 					return $uri;
