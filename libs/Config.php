@@ -95,7 +95,7 @@ class Config
 	 * Returns the full config object of the current host. Can be limited by using a element name of the first level as function parameter.
 	 *
 	 * @param string $parameter
-     * @return string
+     * @return string|object
 	 *
 	 */
 	public static function getHostParameter(string $parameter = "")
