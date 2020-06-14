@@ -52,8 +52,10 @@ class Link
 	 *
 	 * @return array
 	 */
+	/*
 	public function getBreadcrumb(array $parameters)
 	{
 	    return [];
 	}
+	*/
 }
