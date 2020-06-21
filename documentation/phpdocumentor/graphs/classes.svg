@@ -21,7 +21,7 @@
 </g>
 <g id="clust3" class="cluster">
 <title>cluster_\BASE\MVC</title>
-<path fill="none" stroke="#c0c0c0" d="M36,-150C36,-150 374,-150 374,-150 380,-150 386,-156 386,-162 386,-162 386,-624 386,-624 386,-630 380,-636 374,-636 374,-636 36,-636 36,-636 30,-636 24,-630 24,-624 24,-624 24,-162 24,-162 24,-156 30,-150 36,-150"/>
+<path fill="none" stroke="#c0c0c0" d="M36,-204C36,-204 374,-204 374,-204 380,-204 386,-210 386,-216 386,-216 386,-624 386,-624 386,-630 380,-636 374,-636 374,-636 36,-636 36,-636 30,-636 24,-630 24,-624 24,-624 24,-216 24,-216 24,-210 30,-204 36,-204"/>
 <text text-anchor="middle" x="205" y="-623.2" font-family="Times,serif" font-size="11.00" fill="#c0c0c0">MVC</text>
 </g>
 <g id="clust4" class="cluster">
@@ -41,8 +41,8 @@
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_\BASE\Helper</title>
-<path fill="none" stroke="#c0c0c0" d="M261.5,-70C261.5,-70 337.5,-70 337.5,-70 343.5,-70 349.5,-76 349.5,-82 349.5,-82 349.5,-130 349.5,-130 349.5,-136 343.5,-142 337.5,-142 337.5,-142 261.5,-142 261.5,-142 255.5,-142 249.5,-136 249.5,-130 249.5,-130 249.5,-82 249.5,-82 249.5,-76 255.5,-70 261.5,-70"/>
-<text text-anchor="middle" x="299.5" y="-129.2" font-family="Times,serif" font-size="11.00" fill="#c0c0c0">Helper</text>
+<path fill="none" stroke="#c0c0c0" d="M261.5,-124C261.5,-124 337.5,-124 337.5,-124 343.5,-124 349.5,-130 349.5,-136 349.5,-136 349.5,-184 349.5,-184 349.5,-190 343.5,-196 337.5,-196 337.5,-196 261.5,-196 261.5,-196 255.5,-196 249.5,-190 249.5,-184 249.5,-184 249.5,-136 249.5,-136 249.5,-130 255.5,-124 261.5,-124"/>
+<text text-anchor="middle" x="299.5" y="-183.2" font-family="Times,serif" font-size="11.00" fill="#c0c0c0">Helper</text>
 </g>
 <!-- \\BASE\\MVC\\TemplateEngines\\Smarty\\Plugins\\Link -->
 <g id="node1" class="node">
@@ -68,42 +68,42 @@
 <path fill="none" stroke="#000000" stroke-dasharray="1,5" d="M236.8973,-452C217.3319,-452 195.5774,-452 175.3697,-452"/>
 <polygon fill="none" stroke="#000000" points="175.2779,-448.5001 165.2778,-452 175.2778,-455.5001 175.2779,-448.5001"/>
 </g>
-<!-- \\BASE\\MVC\\Controller -->
-<g id="node4" class="node">
-<title>\\BASE\\MVC\\Controller</title>
-<polygon fill="none" stroke="#000000" points="341.5,-410 257.5,-410 257.5,-374 341.5,-374 341.5,-410"/>
-<text text-anchor="middle" x="299.5" y="-389.2" font-family="Courier,monospace" font-size="11.00" fill="#000000">Controller</text>
-</g>
-<!-- \\BASE\\MVC\\Local -->
-<g id="node5" class="node">
-<title>\\BASE\\MVC\\Local</title>
-<polygon fill="none" stroke="#000000" points="326.5,-356 272.5,-356 272.5,-320 326.5,-320 326.5,-356"/>
-<text text-anchor="middle" x="299.5" y="-335.2" font-family="Courier,monospace" font-size="11.00" fill="#000000">Local</text>
-</g>
 <!-- \\BASE\\MVC\\Uri -->
-<g id="node6" class="node">
+<g id="node4" class="node">
 <title>\\BASE\\MVC\\Uri</title>
-<polygon fill="none" stroke="#000000" points="326.5,-302 272.5,-302 272.5,-266 326.5,-266 326.5,-302"/>
-<text text-anchor="middle" x="299.5" y="-281.2" font-family="Courier,monospace" font-size="11.00" fill="#000000">Uri</text>
+<polygon fill="none" stroke="#000000" points="326.5,-410 272.5,-410 272.5,-374 326.5,-374 326.5,-410"/>
+<text text-anchor="middle" x="299.5" y="-389.2" font-family="Courier,monospace" font-size="11.00" fill="#000000">Uri</text>
 </g>
 <!-- \\BASE\\MVC\\Routes -->
-<g id="node7" class="node">
+<g id="node5" class="node">
 <title>\\BASE\\MVC\\Routes</title>
-<polygon fill="none" stroke="#000000" points="328,-248 271,-248 271,-212 328,-212 328,-248"/>
-<text text-anchor="middle" x="299.5" y="-227.2" font-family="Courier,monospace" font-size="11.00" fill="#000000">Routes</text>
+<polygon fill="none" stroke="#000000" points="328,-356 271,-356 271,-320 328,-320 328,-356"/>
+<text text-anchor="middle" x="299.5" y="-335.2" font-family="Courier,monospace" font-size="11.00" fill="#000000">Routes</text>
 </g>
-<!-- \\BASE\\MVC\\Links -->
-<g id="node8" class="node">
-<title>\\BASE\\MVC\\Links</title>
-<polygon fill="none" stroke="#000000" points="326.5,-194 272.5,-194 272.5,-158 326.5,-158 326.5,-194"/>
-<text text-anchor="middle" x="299.5" y="-173.2" font-family="Courier,monospace" font-size="11.00" fill="#000000">Links</text>
+<!-- \\BASE\\MVC\\Controller -->
+<g id="node6" class="node">
+<title>\\BASE\\MVC\\Controller</title>
+<polygon fill="none" stroke="#000000" points="341.5,-302 257.5,-302 257.5,-266 341.5,-266 341.5,-302"/>
+<text text-anchor="middle" x="299.5" y="-281.2" font-family="Courier,monospace" font-size="11.00" fill="#000000">Controller</text>
+</g>
+<!-- \\BASE\\MVC\\Local -->
+<g id="node7" class="node">
+<title>\\BASE\\MVC\\Local</title>
+<polygon fill="none" stroke="#000000" points="326.5,-248 272.5,-248 272.5,-212 326.5,-212 326.5,-248"/>
+<text text-anchor="middle" x="299.5" y="-227.2" font-family="Courier,monospace" font-size="11.00" fill="#000000">Local</text>
 </g>
 <!-- \\BASE\\Helper\\RegExp -->
-<g id="node9" class="node">
+<g id="node8" class="node">
 <title>\\BASE\\Helper\\RegExp</title>
-<polygon fill="none" stroke="#000000" points="341.5,-114 257.5,-114 257.5,-78 341.5,-78 341.5,-114"/>
-<text text-anchor="start" x="265.5" y="-99.2" font-family="Courier,monospace" font-size="11.00" fill="#000000">«abstract»</text>
-<text text-anchor="start" x="279" y="-87.2" font-family="Courier,monospace" font-size="11.00" fill="#000000">RegExp</text>
+<polygon fill="none" stroke="#000000" points="341.5,-168 257.5,-168 257.5,-132 341.5,-132 341.5,-168"/>
+<text text-anchor="start" x="265.5" y="-153.2" font-family="Courier,monospace" font-size="11.00" fill="#000000">«abstract»</text>
+<text text-anchor="start" x="279" y="-141.2" font-family="Courier,monospace" font-size="11.00" fill="#000000">RegExp</text>
+</g>
+<!-- \\BASE\\Config -->
+<g id="node9" class="node">
+<title>\\BASE\\Config</title>
+<polygon fill="none" stroke="#000000" points="328,-114 271,-114 271,-78 328,-78 328,-114"/>
+<text text-anchor="middle" x="299.5" y="-93.2" font-family="Courier,monospace" font-size="11.00" fill="#000000">Config</text>
 </g>
 <!-- \\BASE\\MVC -->
 <g id="node10" class="node">
