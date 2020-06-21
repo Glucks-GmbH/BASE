@@ -15,7 +15,7 @@
   "autoload": {
     "psr-4": {
       "BASE\\": "libs/",
-      "BASE\\PHPUnit": "phpunit/"
+      "BASE\\\\PHPUnit\\": "phpunit/"
     }
   },
   "config": {
