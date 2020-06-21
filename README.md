@@ -1,4 +1,6 @@
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/a14f71f0f0594c8a9713e707db77648b)](https://www.codacy.com/gh/gluecks-gmbh/base?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=gluecks-gmbh/base&amp;utm_campaign=Badge_Grade)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/gluecks-gmbh/base/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/gluecks-gmbh/base/?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/gluecks-gmbh/base/badges/build.png?b=master)](https://scrutinizer-ci.com/g/gluecks-gmbh/base/build-status/master)
+[![Code Intelligence Status](https://scrutinizer-ci.com/g/gluecks-gmbh/base/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/code-intelligence)
 
 # BASE
 Base is Framework and MVC
