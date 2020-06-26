@@ -38,7 +38,7 @@ class Links
      * @param array $routes
      * @return bool
      */
-    public static function setRoutes(array $routes)
+    public static function setRoutes(array $routes): bool
     {
         if (count($routes) < 1) {
             throw new InvalidArgumentException("Invalid or empty routes array", E_ERROR);
@@ -61,7 +61,7 @@ class Links
      * @param array $regExpValues
      * @return string|null
      */
-    public static function getUri(string $requestedController, array $regExpValues = [])
+    public static function getUri(string $requestedController, array $regExpValues = []): ?string
     {
         if (count(self::$links) < 1) {
             throw new RuntimeException("Empty routes list", E_ERROR);

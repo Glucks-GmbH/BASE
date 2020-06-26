@@ -30,7 +30,7 @@ class Link
 	 *
 	 * @return string
 	 */
-	public function get(array $parameters)
+	public function get(array $parameters): string
 	{
 		if (!isset($parameters['values']) || !is_array($parameters['values'])) {
 			$parameters['values'] = [];

@@ -31,7 +31,7 @@ class MVC
 	 *
 	 * @return string
 	 */
-	public static function run()
+	public static function run(): string
 	{
 		Config::loadXml();
 

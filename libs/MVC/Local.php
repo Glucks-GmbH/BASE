@@ -27,7 +27,7 @@ class Local
      *
      * @return string|null
      */
-    public static function getCode()
+    public static function getCode(): ?string
     {
         $uriLocalCode = Uri::getLocalCode();
         if (!empty($uriLocalCode)) {

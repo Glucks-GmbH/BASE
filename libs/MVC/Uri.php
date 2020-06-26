@@ -35,9 +35,9 @@ class Uri
 	/**
 	 * Returns the language-country-code cleaned uri
 	 *
-	 * @return string|null
+	 * @return string
 	 */
-	public static function get()
+	public static function get(): string
 	{
 		$uri = self::getUri();
 		$code = self::getLocalCode();

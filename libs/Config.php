@@ -53,7 +53,7 @@ class Config
      *
      * @return void
      */
-    public static function clear()
+    public static function clear(): void
     {
         self::$config = new stdClass();
         self::$appDir = "";
@@ -65,8 +65,9 @@ class Config
      * Parse the BASE config from <app-dir>/config/base.xml
      * Extracts current host part from the config object and link to the privat var $currentHost. Which is usable by getHostParameter()
      *
+     * @return void
      */
-    public static function loadXml()
+    public static function loadXml(): void
     {
         $configFile = self::getAppDir() . "config/base.xml";
 
@@ -95,9 +96,9 @@ class Config
      * Returns the full config object of the current host. Can be limited by using a element name of the first level as function parameter.
      *
      * @param string $parameter
-     * @throws InvalidArgumentException
-     * @return string
+     * @return string|object
      *
+     * @throws InvalidArgumentException
      */
     public static function getHostParameter(string $parameter)
     {
@@ -112,8 +113,9 @@ class Config
      * Can be used to set an custom app directory.
      *
      * @param string $appDir
+     * @return void
      */
-    public static function setAppDir(string $appDir)
+    public static function setAppDir(string $appDir): void
     {
         if (is_string($appDir) and file_exists($appDir)) {
             self::$appDir = $appDir;
@@ -127,7 +129,7 @@ class Config
      *
      * @return string
      */
-    public static function getAppDir()
+    public static function getAppDir(): string
     {
         if (!empty(self::$appDir)) {
             return self::$appDir;
@@ -142,7 +144,7 @@ class Config
      * @return array|null
      */
 
-    public static function getTemplateEngine()
+    public static function getTemplateEngine(): ?array
     {
         if (!isset(self::$config->templates)) {
             return null;

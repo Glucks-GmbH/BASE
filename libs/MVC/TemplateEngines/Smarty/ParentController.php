@@ -109,27 +109,29 @@ class ParentController implements \BASE\MVC\TemplateEngines\ParentController
      *
      * @return void
      */
-    protected function loadConfig(string $configFile)
+    protected function loadConfig(string $configFile): void
     {
         /**
          * default local code file
          */
 
         $defaultCode = Config::getHostParameter("localCode");
-        $defaultConfigFile = $defaultCode . "/" . $configFile;
+        if (is_string($defaultCode)) {
+            $defaultConfigFile = $defaultCode . "/" . $configFile;
 
-        if (file_exists($this->Smarty->getConfigDir()[0] . $defaultConfigFile)) {
-            $this->Smarty->configLoad($defaultConfigFile);
-        }
+            if (file_exists($this->Smarty->getConfigDir()[0] . $defaultConfigFile)) {
+                $this->Smarty->configLoad($defaultConfigFile);
+            }
 
-        /**
-         * current local code file
-         */
-        if ($defaultCode != $this->code) {
-            $currentConfigFile = $this->code . "/" . $configFile;
+            /**
+             * current local code file
+             */
+            if ($defaultCode != $this->code) {
+                $currentConfigFile = $this->code . "/" . $configFile;
 
-            if (file_exists($this->Smarty->getConfigDir()[0] . $currentConfigFile)) {
-                $this->Smarty->configLoad($currentConfigFile);
+                if (file_exists($this->Smarty->getConfigDir()[0] . $currentConfigFile)) {
+                    $this->Smarty->configLoad($currentConfigFile);
+                }
             }
         }
     }
