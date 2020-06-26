@@ -37,7 +37,7 @@ abstract class RegExp
 	 *
 	 * @return string
 	 */
-	public static function getRexExp(): string
+	public static function getRegExp(): string
 	{
 		return "/(\(.*\))/";
 	}

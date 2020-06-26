@@ -16,9 +16,14 @@ class MySQLTest extends TestCase
      */
     public function testGet()
     {
-        $_ENV['mysqli_host'] = "docker.for.mac.localhost";
-        $_ENV['mysqli_username'] = "";
-        $_ENV['mysqli_password'] = "";
+        if (!isset($_ENV['mysqli_host']) or
+            !isset($_ENV['mysqli_username']) or
+            !isset($_ENV['mysqli_password'])
+        ) {
+            $this->markTestSkipped(
+                'MySQL Login data not set'
+            );
+        }
 
         $database = "";
 

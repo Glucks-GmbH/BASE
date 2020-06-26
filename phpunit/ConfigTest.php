@@ -30,18 +30,6 @@ class ConfigTest extends TestCase
 		Config::loadXml();
 	}
 
-	public function testGetHostParameter()
-	{
-		Config::setAppDir(__DIR__ . "/dataProvider/ConfigTest/validConfig/");
-
-		Config::loadXml();
-
-		$hostObject = Config::getHostParameter();
-
-		$this->assertTrue(is_object($hostObject));
-		$this->assertEquals('local.de', $hostObject->domain);
-	}
-
 	public function testGetHostParameterWithParameter()
 	{
 		Config::setAppDir(__DIR__ . "/dataProvider/ConfigTest/validConfig/");
@@ -62,7 +50,7 @@ class ConfigTest extends TestCase
 
 		Config::loadXml();
 
-		$localCodeOfHost = Config::getHostParameter('value');
+		Config::getHostParameter('value');
 	}
 
 	public function testGetAppDir()

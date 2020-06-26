@@ -62,6 +62,6 @@ class RegExpTest extends TestCase
 	 */
 	public function testRegExp(string $code, bool $expected)
 	{
-		$this->assertEquals(preg_match(RegExp::getRexExp(), $code), $expected);
+		$this->assertEquals(preg_match(RegExp::getRegExp(), $code), $expected);
 	}
 }
