@@ -41,7 +41,8 @@ class Local
             }
             return null;
         } else {
-            return Config::getHostParameter("localCode");
+            $localCode = Config::getHostParameter("localCode");
+            return (is_string($localCode) && !empty($localCode)) ? $localCode : null;
         }
     }
 }
