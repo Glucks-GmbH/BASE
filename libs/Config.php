@@ -30,14 +30,14 @@ class Config
      *
      * @var string
      */
-    private static $appDir = "";
+    private static string $appDir = "";
 
     /**
      * XML-Object with the host part of the current HTTP_HOST from the config.xml
      *
      * @var object
      */
-    private static $currentHost;
+    private static object $currentHost;
 
     /**
      *
@@ -45,7 +45,7 @@ class Config
      *
      * @var object
      */
-    private static $config;
+    private static object $config;
 
 
     /**

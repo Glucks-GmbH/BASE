@@ -29,7 +29,7 @@ class Routes
 	 *
 	 * @var array
 	 */
-	private $uris = [];
+	private array $uris = [];
 
 	/**
 	 * Routes constructor.
@@ -113,7 +113,7 @@ class Routes
 
 						$currentUri = str_replace("//", "/", $parentUri . $uriStr);
 
-						$isRegExp = (isset($uri->attributes()->regExp) and $uri->attributes()->regExp == 'true') ? true : false;
+						$isRegExp = (isset($uri->attributes()->regExp) and $uri->attributes()->regExp == 'true');
 
 						if (isset($uris[$currentUri])) {
 							throw new RuntimeException("Duplicate uri: " . $currentUri . " in language-country: " . $code, E_ERROR);
