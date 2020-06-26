@@ -89,7 +89,7 @@
 </td>
        <td class="danger small"><div align="right">0.00%</div></td>
        <td class="danger small"><div align="right">0&nbsp;/&nbsp;2</div></td>
-       <td class="danger small">13.07</td>
+       <td class="danger small">14.08</td>
        <td class="success big">       <div class="progress">
          <div class="progress-bar bg-success" role="progressbar" aria-valuenow="92.59" aria-valuemin="0" aria-valuemax="100" style="width: 92.59%">
            <span class="sr-only">92.59% covered (success)</span>
@@ -101,7 +101,7 @@
       </tr>
 
       <tr>
-       <td class="danger" colspan="4">&nbsp;<a href="#41"><abbr title="setRoutes(array $routes)">setRoutes</abbr></a></td>
+       <td class="danger" colspan="4">&nbsp;<a href="#41"><abbr title="setRoutes(array $routes): bool">setRoutes</abbr></a></td>
        <td class="danger big">       <div class="progress">
          <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="0.00" aria-valuemin="0" aria-valuemax="100" style="width: 0.00%">
            <span class="sr-only">0.00% covered (danger)</span>
@@ -122,7 +122,7 @@
       </tr>
 
       <tr>
-       <td class="danger" colspan="4">&nbsp;<a href="#64"><abbr title="getUri(string $requestedController, array $regExpValues = [])">getUri</abbr></a></td>
+       <td class="danger" colspan="4">&nbsp;<a href="#64"><abbr title="getUri(string $requestedController, array $regExpValues = []): ?string">getUri</abbr></a></td>
        <td class="danger big">       <div class="progress">
          <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="0.00" aria-valuemin="0" aria-valuemax="100" style="width: 0.00%">
            <span class="sr-only">0.00% covered (danger)</span>
@@ -131,7 +131,7 @@
 </td>
        <td class="danger small"><div align="right">0.00%</div></td>
        <td class="danger small"><div align="right">0&nbsp;/&nbsp;1</div></td>
-       <td class="danger small">10</td>
+       <td class="danger small">11</td>
        <td class="success big">       <div class="progress">
          <div class="progress-bar bg-success" role="progressbar" aria-valuenow="95.00" aria-valuemin="0" aria-valuemax="100" style="width: 95.00%">
            <span class="sr-only">95.00% covered (success)</span>
@@ -188,7 +188,7 @@
      <tr><td><div align="right"><a name="38"></a><a href="#38">38</a></div></td><td class="codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@param&nbsp;array&nbsp;$routes</span></td></tr>
      <tr><td><div align="right"><a name="39"></a><a href="#39">39</a></div></td><td class="codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@return&nbsp;bool</span></td></tr>
      <tr><td><div align="right"><a name="40"></a><a href="#40">40</a></div></td><td class="codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/</span></td></tr>
-     <tr><td><div align="right"><a name="41"></a><a href="#41">41</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">public</span><span class="default">&nbsp;</span><span class="keyword">static</span><span class="default">&nbsp;</span><span class="keyword">function</span><span class="default">&nbsp;</span><span class="default">setRoutes</span><span class="keyword">(</span><span class="keyword">array</span><span class="default">&nbsp;</span><span class="default">$routes</span><span class="keyword">)</span></td></tr>
+     <tr><td><div align="right"><a name="41"></a><a href="#41">41</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">public</span><span class="default">&nbsp;</span><span class="keyword">static</span><span class="default">&nbsp;</span><span class="keyword">function</span><span class="default">&nbsp;</span><span class="default">setRoutes</span><span class="keyword">(</span><span class="keyword">array</span><span class="default">&nbsp;</span><span class="default">$routes</span><span class="keyword">)</span><span class="keyword">:</span><span class="default">&nbsp;</span><span class="default">bool</span></td></tr>
      <tr><td><div align="right"><a name="42"></a><a href="#42">42</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">{</span></td></tr>
      <tr class="covered-by-large-tests popin"><td data-title="5 tests cover line 43" data-content="&lt;ul&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;LinksTest::testSetRoutes&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;LinksTest::testGetUri&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;LinksTest::testGetUriRegExpEmptyValues&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;LinksTest::testGetUriRegExpInvalidValue&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;LinksTest::testGetUriUnkownController&lt;/li&gt;&lt;/ul&gt;" data-placement="top" data-html="true"><div align="right"><a name="43"></a><a href="#43">43</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">if</span><span class="default">&nbsp;</span><span class="keyword">(</span><span class="default">count</span><span class="keyword">(</span><span class="default">$routes</span><span class="keyword">)</span><span class="default">&nbsp;</span><span class="keyword">&lt;</span><span class="default">&nbsp;</span><span class="default">1</span><span class="keyword">)</span><span class="default">&nbsp;</span><span class="keyword">{</span></td></tr>
      <tr class="danger"><td><div align="right"><a name="44"></a><a href="#44">44</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">throw</span><span class="default">&nbsp;</span><span class="keyword">new</span><span class="default">&nbsp;</span><span class="default">InvalidArgumentException</span><span class="keyword">(</span><span class="default">&quot;Invalid&nbsp;or&nbsp;empty&nbsp;routes&nbsp;array&quot;</span><span class="keyword">,</span><span class="default">&nbsp;</span><span class="default">E_ERROR</span><span class="keyword">)</span><span class="keyword">;</span></td></tr>
@@ -211,7 +211,7 @@
      <tr><td><div align="right"><a name="61"></a><a href="#61">61</a></div></td><td class="codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@param&nbsp;array&nbsp;$regExpValues</span></td></tr>
      <tr><td><div align="right"><a name="62"></a><a href="#62">62</a></div></td><td class="codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@return&nbsp;string|null</span></td></tr>
      <tr><td><div align="right"><a name="63"></a><a href="#63">63</a></div></td><td class="codeLine"><span class="comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/</span></td></tr>
-     <tr><td><div align="right"><a name="64"></a><a href="#64">64</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">public</span><span class="default">&nbsp;</span><span class="keyword">static</span><span class="default">&nbsp;</span><span class="keyword">function</span><span class="default">&nbsp;</span><span class="default">getUri</span><span class="keyword">(</span><span class="default">string</span><span class="default">&nbsp;</span><span class="default">$requestedController</span><span class="keyword">,</span><span class="default">&nbsp;</span><span class="keyword">array</span><span class="default">&nbsp;</span><span class="default">$regExpValues</span><span class="default">&nbsp;</span><span class="keyword">=</span><span class="default">&nbsp;</span><span class="keyword">[</span><span class="keyword">]</span><span class="keyword">)</span></td></tr>
+     <tr><td><div align="right"><a name="64"></a><a href="#64">64</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">public</span><span class="default">&nbsp;</span><span class="keyword">static</span><span class="default">&nbsp;</span><span class="keyword">function</span><span class="default">&nbsp;</span><span class="default">getUri</span><span class="keyword">(</span><span class="default">string</span><span class="default">&nbsp;</span><span class="default">$requestedController</span><span class="keyword">,</span><span class="default">&nbsp;</span><span class="keyword">array</span><span class="default">&nbsp;</span><span class="default">$regExpValues</span><span class="default">&nbsp;</span><span class="keyword">=</span><span class="default">&nbsp;</span><span class="keyword">[</span><span class="keyword">]</span><span class="keyword">)</span><span class="keyword">:</span><span class="default">&nbsp;</span><span class="keyword">?</span><span class="default">string</span></td></tr>
      <tr><td><div align="right"><a name="65"></a><a href="#65">65</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">{</span></td></tr>
      <tr class="covered-by-large-tests popin"><td data-title="5 tests cover line 66" data-content="&lt;ul&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;LinksTest::testGetUriNoRoutes&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;LinksTest::testGetUri&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;LinksTest::testGetUriRegExpEmptyValues&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;LinksTest::testGetUriRegExpInvalidValue&lt;/li&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;LinksTest::testGetUriUnkownController&lt;/li&gt;&lt;/ul&gt;" data-placement="top" data-html="true"><div align="right"><a name="66"></a><a href="#66">66</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">if</span><span class="default">&nbsp;</span><span class="keyword">(</span><span class="default">count</span><span class="keyword">(</span><span class="default">self</span><span class="default">::</span><span class="default">$links</span><span class="keyword">)</span><span class="default">&nbsp;</span><span class="keyword">&lt;</span><span class="default">&nbsp;</span><span class="default">1</span><span class="keyword">)</span><span class="default">&nbsp;</span><span class="keyword">{</span></td></tr>
      <tr class="covered-by-large-tests popin"><td data-title="1 test covers line 67" data-content="&lt;ul&gt;&lt;li class=&quot;covered-by-large-tests&quot;&gt;LinksTest::testGetUriNoRoutes&lt;/li&gt;&lt;/ul&gt;" data-placement="top" data-html="true"><div align="right"><a name="67"></a><a href="#67">67</a></div></td><td class="codeLine"><span class="default">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword">throw</span><span class="default">&nbsp;</span><span class="keyword">new</span><span class="default">&nbsp;</span><span class="default">RuntimeException</span><span class="keyword">(</span><span class="default">&quot;Empty&nbsp;routes&nbsp;list&quot;</span><span class="keyword">,</span><span class="default">&nbsp;</span><span class="default">E_ERROR</span><span class="keyword">)</span><span class="keyword">;</span></td></tr>
@@ -265,7 +265,7 @@
      <span class="warning"><strong>Dead Code</strong></span>
     </p>
     <p>
-     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 7.0.10</a> using <a href="https://secure.php.net/" target="_top">PHP 7.4.1</a> with <a href="https://xdebug.org/">Xdebug 2.8.1</a> and <a href="https://phpunit.de/">PHPUnit 8.5.2</a> at Fri Jun 26 23:30:01 CEST 2020.</small>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 7.0.10</a> using <a href="https://secure.php.net/" target="_top">PHP 7.4.1</a> with <a href="https://xdebug.org/">Xdebug 2.8.1</a> and <a href="https://phpunit.de/">PHPUnit 8.5.2</a> at Fri Jun 26 23:48:57 CEST 2020.</small>
     </p>
     <a title="Back to the top" id="toplink" href="#">
         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16"><path fill-rule="evenodd" d="M12 11L6 5l-6 6h12z"/></svg>
