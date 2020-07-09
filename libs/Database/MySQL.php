@@ -61,6 +61,7 @@ class MySQL
                 if ($mysqliObject->connect_errno) {
                     throw new RuntimeException("Failed to connect to MySQL: (" . $mysqliObject->connect_errno . ") " . $mysqliObject->connect_error, E_ERROR);
                 } else {
+                    $mysqliObject->set_charset("utf8");
                     self::$databaseObjects[$database] = $mysqliObject;
                     return self::$databaseObjects[$database];
                 }
