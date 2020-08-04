@@ -11,8 +11,6 @@
 
 namespace BASE\MVC\TemplateEngines\JSON;
 
-use Exception;
-
 /**
  * Class ParentController
  *
@@ -43,8 +41,6 @@ class ParentController implements \BASE\MVC\TemplateEngines\ParentController
     /**
      *
      * @param array $data
-     *
-     * @throws Exception
      */
     protected function createJsonOutput(array $data): void
     {
