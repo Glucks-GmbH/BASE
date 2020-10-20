@@ -29,7 +29,7 @@ class Uri
 	 */
 	private static function getUri(): string
 	{
-        return filter_var($_SERVER['REQUEST_URI'], FILTER_SANITIZE_STRING);
+        return strtok(filter_var($_SERVER['REQUEST_URI'], FILTER_SANITIZE_STRING), '?');
 	}
 
 	/**
