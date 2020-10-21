@@ -76,10 +76,11 @@ class Routes
      * @param string $code
      * @param array $uris
      * @param string $parentUri
+     * @param bool $isRegExp
      *
      * @return array
      */
-    private function parseRoutes(object $routes, string $code, array $uris, string $parentUri): array
+    private function parseRoutes(object $routes, string $code, array $uris, string $parentUri, bool $isRegExp = false): array
     {
         foreach ($routes as $route) {
             if (empty($route->attributes()->controller)) {
@@ -113,7 +114,7 @@ class Routes
 
                         $currentUri = str_replace("//", "/", $parentUri . $uriStr);
 
-                        $isRegExp = (isset($uri->attributes()->regExp) and $uri->attributes()->regExp == 'true');
+                        $isRegExp = ((isset($uri->attributes()->regExp) and $uri->attributes()->regExp == 'true') || $isRegExp);
 
                         if (isset($uris[$currentUri])) {
                             throw new RuntimeException("Duplicate uri: " . $currentUri . " in language-country: " . $code, E_ERROR);
@@ -129,7 +130,7 @@ class Routes
                 }
 
                 if (isset($route->subroutes)) {
-                    $uris = $this->parseRoutes($route->subroutes->route, $code, $uris, $currentUri);
+                    $uris = $this->parseRoutes($route->subroutes->route, $code, $uris, $currentUri, $isRegExp);
                 }
             }
         }
